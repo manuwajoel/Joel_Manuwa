@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary : hsl(214, 6%, 75%);
+    --blue : hsl(206, 58%, 43%);;
+    --font-color: #25282B;
+    --font-high-emphasis: #734B32;
+    --font-secondary: #2E77AE;
+    --font-background: #FFF;
+  
+    --font-family-primary: 'Poppins';
+    --font-family-secondary: 'Nunito';
+    --font-family-tertiary: 'Playfair Display';
+    --font-family-quat: 'Roboto';
+}
+body{
+    background-color: #E4E4E4;
+}
+html {
+    scroll-behavior: smooth;
+}
+.home{
+    display: flex;
+    margin: 5%;
+}
+.nxt{
+    margin: 5%;
+}
+.intro{
+    margin-top: 3rem;
+    width: auto;
+}
+.img{
+    margin-left: 10rem;
+}
+.icon-pic{
+    width: 75%;
+}
+img{
+    width: 100%;
+    /* border-radius: 30rem; */
+}
+button:hover {
+    cursor: pointer;
+}
+.b-1, .b-2, .b-3{
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    border-radius: 0.5rem;
+    width: 7.2rem;
+    height: 2.7rem;
+}
+.b-1{
+    background: #2E77AE;
+    color: var(--font-background);
+    font-family: var(--font-family-quat);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+.b-2{
+    color: var(--font-color);
+    font-family: var(--font-family-quat);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+.b-3{
+    background: #734B32;
+    color: var(--font-background);
+    text-align: center;
+    font-family: var(--font-family-quat);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+.name-2{
+    color: var(--font-color);
+    font-family: var(--font-family-tertiary);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.second-p{
+    color: var(--font-high-emphasis);
+    font-family: var(--font-family-secondary);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.text-name{
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%; /* 32.4px */
+    color: var(--font-color);
+    font-family: var(--font-family-primary);
+}
+li, a{
+    text-decoration: none;
+    color: black;
+}
+.nav-items{
+    display: flex;
+    list-style: none;
+    gap: 1.5em;
+    color: var(--font-color);
+    font-family: var(--font-family-primary);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+h2, .name-2, .text-prjt{
+    margin-bottom: 0.8rem;
+}
+p{
+    margin-bottom: 2rem;
+}
+#soft{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 150%;
+    font-stretch: normal;
+    text-decoration: none;
+    color: var(--font-secondary);
+    font-family: var(--font-family-secondary);
+    font-style: normal;
+}
+.name{
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120px;
+    color: var(--font-color);
+    font-family: var(--font-family-tertiary);
+}
+.first-p{
+    color: var(--font-high-emphasis);
+    font-family: var(--font-family-secondary);
+    white-space: nowrap;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+p{
+    line-height: 150%;
+    color: #734B32;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+header{
+    background: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-container>nav>ul>li{
+    list-style: none;
+    display: inline;
+    margin-right: 1rem;
+}
+.nav-container > nav > ul > li > a:hover{
+    border-bottom: 2px solid var(--blue);
+}
+.nav-img > img{
+    display: none;
+}
+.text-prjt{
+    color: var(--font-color);
+    text-align: center;
+    font-family: var(--font-family-tertiary);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    text-decoration-line: underline;
+}
+.Project-title{
+    width: 100%;
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+    background-color: #FFF;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    font-family: var(--font-family-secondary);
+    font-size: 18px;
+}
+.grid-class{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: space-around;
+    margin: auto;
+    gap: 1.875rem;
+    align-items: center;
+    padding: 0 5%;
+}
+@media (max-width: 900px){
+    .container{
+        padding: 1rem 2rem;
+        position: relative;
+    }
+    .nav-img > img{
+        display: block;
+        cursor: pointer;
+    }
+    /* .nav-container{
+        flex-direction: column;
+    } */
+    .nav-items{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .nav-container > nav{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 4.1rem;
+        background-color: var(--primary);
+        width: 100%;
+        padding: 1rem 5%;
+        /* transition: display 10s; */
+    }
+    .nav-container > nav > ul > li{
+        display: flex;
+        margin-bottom: 1rem;
+    }
+    .first-p{
+        white-space: normal;
+    }
+}
+@media screen  and (max-width: 900px) {
+    .home{
+        flex-direction: column;
+    }
+    /* .grid-class{
+        display: grid;
+        grid-template-columns: repeat(1fr, 1fr);
+    } */
+    .nav-items{
+        align-items: center;
+    }
+    .name{
+        font-size: 3rem;
+    }
+}
+.vectors-contact{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+}
+.contact-me{
+    padding-bottom: 1rem;
+    margin-top: 2%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    color: var(--font-high-emphasis);
+    text-align: center;
+    font-family: var(--font-family-secondary);
+}
