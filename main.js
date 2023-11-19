@@ -1,15 +1,34 @@
 const btn = document.querySelector('.close');
+const nav = document.querySelector('nav');
 
-btn.addEventListener('click', ()=>{
-    let nav = document.querySelector('nav')
-    if(nav.style.display == 'block'){
-        nav.style.display = 'none';
-        btn.src = './vectors/icon-menu.svg';
-    }else{
-                nav.style.display = 'block';
-                btn.src = './vectors/icon-close.svg';
-            }
-})
+btn.addEventListener('click', () => {
+    if (nav.style.display === 'block') {
+        closeMenu();
+    } else {
+        openMenu();
+    }
+});
+
+// Close the menu when clicking outside of it
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = nav.contains(event.target);
+    const isClickOnButton = btn.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnButton) {
+        closeMenu();
+    }
+});
+
+function openMenu() {
+    nav.style.display = 'block';
+    btn.src = './vectors/icon-close.svg';
+}
+
+function closeMenu() {
+    nav.style.display = 'none';
+    btn.src = './vectors/icon-menu.svg';
+}
+
 
 function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
