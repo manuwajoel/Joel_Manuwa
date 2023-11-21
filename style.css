@@ -34,11 +34,12 @@ html {
     margin-top: 3rem;
     width: auto;
 }
-.img{
+.dp{
     margin-left: 10rem;
+    padding: 2rem;
 }
 .icon-pic{
-    width: 75%;
+    width: 100%;
 }
 img{
     width: 100%;
@@ -251,6 +252,11 @@ header{
     }
     .first-p{
         white-space: normal;
+    }
+    .dp{
+        margin-top: 2rem;
+        margin-left: 0;
+        padding: 0;
     }
 }
 @media screen  and (max-width: 900px) {
