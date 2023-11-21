@@ -34,7 +34,7 @@ function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const phrases = ['Frontend Developer', 'Backend Developer',  'UI/UX Designer'];
+const phrases = ['Frontend Developer'];
 const el = document.getElementById("typewriter");
 
 let sleepTime = 100;
