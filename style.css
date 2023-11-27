@@ -25,6 +25,7 @@ html {
 }
 .home{
     display: flex;
+    margin: 5%;
 }
 .nxt{
     margin: 5%;
@@ -35,23 +36,11 @@ html {
 }
 .dp{
     margin-left: 10rem;
-    padding-top: 2rem;
+    padding: 2rem;
 }
 .icon-pic{
     width: 100%;
     border-radius: 0.6rem;
-}
-#homepage{
-    display: flex;
-    margin-top: 4rem;
-    margin-bottom: 5%;
-    margin-right: 5%;
-    margin-left: 5%;
-    flex-direction: column;
-}
-.text-occ{
-    display: inline;
-    margin-bottom: 1px;
 }
 img{
     width: 100%;
@@ -137,6 +126,9 @@ li, a{
 h2, .name-2, .text-prjt{
     margin-bottom: 0.8rem;
 }
+p{
+    margin-bottom: 2rem;
+}
 #soft{
     font-family: 'Nunito', sans-serif;
     font-size: 1.5rem;
@@ -156,10 +148,18 @@ h2, .name-2, .text-prjt{
     color: var(--font-color);
     font-family: var(--font-family-tertiary);
 }
-p{
+.first-p{
     color: var(--font-high-emphasis);
     font-family: var(--font-family-secondary);
+    white-space: nowrap;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 150%;
+}
+p{
+    line-height: 150%;
+    color: #734B32;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
@@ -228,7 +228,7 @@ header{
     }
     .nav-img > img{
         display: block;
-        /* cursor: pointer; */
+        cursor: pointer;
     }
     /* .nav-container{
         flex-direction: column;
@@ -251,19 +251,16 @@ header{
         display: flex;
         margin-bottom: 1rem;
     }
+    .first-p{
+        white-space: normal;
+    }
     .dp{
-        margin-top: 3rem;
+        margin-top: 2rem;
         margin-left: 0;
         padding: 0;
-        order: 1;
     }
-    .intro{
-        order: 2;
-    }
-    .text-occ{
-        /* text-align: center; */
-        display: none;
-    }
+}
+@media screen  and (max-width: 900px) {
     .home{
         flex-direction: column;
     }
@@ -276,11 +273,8 @@ header{
     }
     .name{
         font-size: 2.5rem;
-        line-height: 45px;
-        margin-top: 0.5rem;
     }
 }
-
 .vectors-contact{
     margin-top: 5%;
     display: flex;
