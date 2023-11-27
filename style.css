@@ -25,7 +25,6 @@ html {
 }
 .home{
     display: flex;
-    margin: 5%;
 }
 .nxt{
     margin: 5%;
@@ -36,11 +35,23 @@ html {
 }
 .dp{
     margin-left: 10rem;
-    padding: 2rem;
+    padding-top: 2rem;
 }
 .icon-pic{
     width: 100%;
     border-radius: 0.6rem;
+}
+#homepage{
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    flex-direction: column;
+}
+.text-occ{
+    display: inline;
+    margin-bottom: 1px;
 }
 img{
     width: 100%;
@@ -228,7 +239,7 @@ header{
     }
     .nav-img > img{
         display: block;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
     /* .nav-container{
         flex-direction: column;
@@ -255,12 +266,17 @@ header{
         white-space: normal;
     }
     .dp{
-        margin-top: 2rem;
+        margin-top: 3rem;
         margin-left: 0;
         padding: 0;
+        order: 1;
     }
-}
-@media screen  and (max-width: 900px) {
+    .intro{
+        order: 2;
+    }
+    .text-occ{
+        text-align: center;
+    }
     .home{
         flex-direction: column;
     }
@@ -273,8 +289,22 @@ header{
     }
     .name{
         font-size: 2.5rem;
+        line-height: 45px;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    .name-2{
+        text-align: center;
+    }
+    .first-p{
+        text-align: center;
+    }
+    .btn-1{
+        justify-content: center;
+        display: flex;
     }
 }
+
 .vectors-contact{
     margin-top: 5%;
     display: flex;
