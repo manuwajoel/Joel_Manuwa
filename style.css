@@ -261,7 +261,8 @@ header{
         order: 2;
     }
     .text-occ{
-        text-align: center;
+        /* text-align: center; */
+        display: none;
     }
     .home{
         flex-direction: column;
